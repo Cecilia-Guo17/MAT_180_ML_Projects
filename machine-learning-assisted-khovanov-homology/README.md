@@ -25,7 +25,7 @@ The bigrading can be represented as plotting the correspoinding subgroup of the 
 2. Implement a gradient descent model.
     1. Linear regression
     2. Polynomial regression
-    3. Neural network (?)
+    3. Neural network
 3. Experiment with various representation of the information which the homology has:
     1. Using total number of free groups of a knot to predict its torsion.
         - PROBLEM: This might be obscuring the information too much.
@@ -37,3 +37,26 @@ The bigrading can be represented as plotting the correspoinding subgroup of the 
 
 1. Use the test set accuracy score and compare it with training-validation accuracy score to avoid overfitting/underfitting issues. 
 2. Apply outside model/functions from imported libraries (e.g. sklearn, pytorch, ...) and compare the result with our implemented gradient descent models in procedure step 2. 
+
+
+
+## Result
+### Achievements and Failures for Data Sampling
+1. We used Sage to generate dataset with no duplicate knots (no repeated homology), 1-component links, 1&2&3-components links, zero torsions, and no zero torsions. (**see _/data/dataset_usages.txt_ for differences in each dataset**).
+2. We failure to use Khoca due to we can't setup environment. This is because Khoca doesn't give us unreduced homology (i.e. bigrading) as expected. 
+
+### Achievements and Failures for Procedure
+1. 
+    1. We trained regression model to predcit total number of torsion by using total number of free group, number of free group in each row, number of free group in each column, and jones polynomial. 
+        - total number of free group: 
+3. We
+4.
+
+### Achievements and Failures for Validation
+1.
+2.
+
+## Discussion
+
+
+## Usages for the files
